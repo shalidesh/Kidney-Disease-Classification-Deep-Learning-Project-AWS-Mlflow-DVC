@@ -14,6 +14,7 @@ AUTHOR_EMAIL = "sdeshan970@gmail.com"
 
 
 setuptools.setup(
+    #we set cnnClassifier as a local package of our project.we can use all folders inside the that,without mension src folder
     name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
