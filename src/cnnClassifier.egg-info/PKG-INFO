@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/shalidesh/Kidney-Disease-Classification-Deep-Learning-Project-AWS-Mlflow-DVC
+Author: shalidesh
+Author-email: sdeshan970@gmail.com
+Project-URL: Bug Tracker, https://github.com/shalidesh/Kidney-Disease-Classification-Deep-Learning-Project-AWS-Mlflow-DVC/issues

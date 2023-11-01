@@ -17,3 +17,4 @@ Flask
 Flask-Cors
 gdown
 -e .
+#for src use for local package and that can import in directly like this'src.components'

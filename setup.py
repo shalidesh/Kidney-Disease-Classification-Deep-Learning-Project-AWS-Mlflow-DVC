@@ -1,6 +1,6 @@
 import setuptools
 
-#look like pip packages readme file
+#this is usefull for if we publish as a pypl package
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
