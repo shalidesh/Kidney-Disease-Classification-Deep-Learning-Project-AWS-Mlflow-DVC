@@ -55,3 +55,43 @@ x==========x]
 [2023-11-05 13:59:14,790: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x] 
+[2023-11-05 21:19:24,019: INFO: main: *******************]
+[2023-11-05 21:19:24,029: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-11-05 21:19:24,031: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-05 21:19:24,047: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-05 21:19:24,063: INFO: common: created directory at: artifacts]
+[2023-11-05 21:19:24,063: ERROR: main: 'ConfigurationManager' object has no attribute 'get_training_config']
+Traceback (most recent call last):
+  File "F:\MlOps\Kidney-Disease-Classification-MLflow-DVC\main.py", line 34, in <module>
+    model_trainer.main()
+  File "f:\mlops\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training_config = config.get_training_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_training_config'
+[2023-11-05 21:21:54,757: INFO: main: *******************]
+[2023-11-05 21:21:54,757: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-11-05 21:21:54,760: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-05 21:21:54,761: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-05 21:21:54,762: INFO: common: created directory at: artifacts]
+[2023-11-05 21:21:54,762: INFO: common: created directory at: artifacts\training]
+[2023-11-05 21:21:59,180: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\kidney-ct-scan-image']
+Traceback (most recent call last):
+  File "F:\MlOps\Kidney-Disease-Classification-MLflow-DVC\main.py", line 34, in <module>
+    model_trainer.main()
+  File "f:\mlops\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\pipeline\stage_03_model_training.py", line 20, in main
+    training.train_valid_generator()
+  File "f:\mlops\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\components\model_training.py", line 37, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+  File "F:\MlOps\Kidney-Disease-Classification-MLflow-DVC\.env\lib\site-packages\keras\preprocessing\image.py", line 1648, in flow_from_directory
+    return DirectoryIterator(
+  File "F:\MlOps\Kidney-Disease-Classification-MLflow-DVC\.env\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\kidney-ct-scan-image'
+[2023-11-05 21:23:30,368: INFO: main: *******************]
+[2023-11-05 21:23:30,368: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-11-05 21:23:30,371: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-05 21:23:30,372: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-05 21:23:30,373: INFO: common: created directory at: artifacts]
+[2023-11-05 21:23:30,373: INFO: common: created directory at: artifacts\training]
+[2023-11-05 21:26:04,820: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
