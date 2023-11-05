@@ -1,3 +1,57 @@
 [2023-11-01 09:54:28,323: INFO: main: welcome to application]
 [2023-11-01 10:05:24,215: INFO: main: welcome to application]
 [2023-11-01 10:05:39,312: INFO: main: welcome to application]
+[2023-11-02 10:25:40,897: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-02 10:25:40,898: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-02 10:25:40,915: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-02 10:25:40,916: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "f:\mlops\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\utils\common.py", line 35, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\MlOps\Kidney-Disease-Classification-MLflow-DVC\main.py", line 9, in <module>
+    data_ingestion.main()
+  File "f:\mlops\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "f:\mlops\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+  File "F:\MlOps\Kidney-Disease-Classification-MLflow-DVC\.env\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "f:\mlops\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\utils\common.py", line 37, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2023-11-02 10:27:32,504: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-02 10:27:32,505: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-02 10:27:32,511: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-02 10:27:32,512: INFO: common: created directory at: artifacts]
+[2023-11-02 10:27:32,512: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-02 10:27:32,513: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1ctk-BQrtyoCf2DznDSN_nHv0sN_KblMf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-11-02 10:28:27,696: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1ctk-BQrtyoCf2DznDSN_nHv0sN_KblMf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-11-02 10:28:28,659: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-05 13:53:26,134: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-11-05 13:53:26,154: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-05 13:53:26,174: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-05 13:53:26,174: INFO: common: created directory at: artifacts]
+[2023-11-05 13:53:26,174: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-05 13:53:26,175: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1ctk-BQrtyoCf2DznDSN_nHv0sN_KblMf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-11-05 13:57:08,034: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1ctk-BQrtyoCf2DznDSN_nHv0sN_KblMf/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-11-05 13:57:08,838: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-11-05 13:57:08,838: INFO: main: *******************]
+[2023-11-05 13:57:08,839: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-11-05 13:57:08,841: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-05 13:57:08,842: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-05 13:57:08,843: INFO: common: created directory at: artifacts]
+[2023-11-05 13:57:08,843: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-11-05 13:59:14,530: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-11-05 13:59:14,790: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x] 
