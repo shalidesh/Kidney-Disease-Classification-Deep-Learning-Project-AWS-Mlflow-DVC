@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/MlOps/Kidney-Disease-Classification-MLflow-DVC/mlruns/0/cd056ceb4a0047b38d25a181a11ebe80/artifacts
+end_time: 1699249477654
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cd056ceb4a0047b38d25a181a11ebe80
+run_name: bold-vole-600
+run_uuid: cd056ceb4a0047b38d25a181a11ebe80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699249456213
+status: 3
+tags: []
+user_id: ShaliDesh
