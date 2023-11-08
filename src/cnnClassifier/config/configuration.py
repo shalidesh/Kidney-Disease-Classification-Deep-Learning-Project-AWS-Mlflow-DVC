@@ -71,16 +71,14 @@ class ConfigurationManager:
 
         return training_config
     
-<<<<<<< HEAD
     def get_evaluation_config(self) -> EvaluationConfig:
-        eval_config = EvaluationConfig(
-            path_of_model="artifacts/training/model.h5",
-            training_data="artifacts/data_ingestion/KidneyDataSet",
-            mlflow_uri="https://dagshub.com/shalidesh/Kidney-Disease-Classification-Deep-Learning-Project-AWS-Mlflow-DVC.mlflow",
-            all_params=self.params,
-            params_image_size=self.params.IMAGE_SIZE,
-            params_batch_size=self.params.BATCH_SIZE
-        )
-        return eval_config
-=======
->>>>>>> 8398a2dbf990f82a561344eb45c5ba89012d56a0
+            eval_config = EvaluationConfig(
+                path_of_model="artifacts/training/model.h5",
+                training_data="artifacts/data_ingestion/KidneyDataSet",
+                mlflow_uri="https://dagshub.com/shalidesh/Kidney-Disease-Classification-Deep-Learning-Project-AWS-Mlflow-DVC.mlflow",
+                all_params=self.params,
+                params_image_size=self.params.IMAGE_SIZE,
+                params_batch_size=self.params.BATCH_SIZE
+            )
+            return eval_config
+        

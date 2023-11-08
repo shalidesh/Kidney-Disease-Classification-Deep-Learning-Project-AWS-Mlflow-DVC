@@ -37,7 +37,6 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-<<<<<<< HEAD
 
 STAGE_NAME = "Evaluation stage"
 try:
@@ -50,5 +49,3 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-=======
->>>>>>> 8398a2dbf990f82a561344eb45c5ba89012d56a0
